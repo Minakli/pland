@@ -1,0 +1,37 @@
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto auto;
+}
+.sidebar {
+  width: 400px;
+  height: 400px;
+  border: 20px solid black;
+  border-radius: 20px;
+}
+.header {
+}
+.footer {
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  width: 900px;
+  height: 700px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+.button {
+  width: 24%;
+  border-radius: 20px;
+}
