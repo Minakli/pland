@@ -1,4 +1,5 @@
 import s from "./Main.module.css";
+import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import MainButton from "../../components/MainButton/MainButton";
 import bgc from "../../components/MainButton/1677605581_fonovik-com-p-remont-kvartir-pod-klyuch-foto-26.jpg";
@@ -11,7 +12,7 @@ export default function Main() {
         <div className={s.sidebar}>
           <div className={s.side_footer}></div>
           <div className={s.side_header_wrapper}>
-            <button className={s.side_header_btn}>
+            <Link to="/about" className={s.side_header_btn}>
               <div className={s.title_box}>
                 <img
                   className={s.logo}
@@ -25,7 +26,7 @@ export default function Main() {
                   <div className={s.title_description}>О нас</div>
                 </div>
               </div>
-            </button>
+            </Link>
           </div>
           <div className={s.side_footer}>
             <span className={s.author_text}>
@@ -42,10 +43,10 @@ export default function Main() {
           </div>
         </div>
         <div className={s.main}>
-          <MainButton bgc={bgc} title="Отделка" />
-          <MainButton bgc={bgc} title="Лоджии" />
-          <MainButton bgc={bgc} title="Окна" />
-          <MainButton bgc={bgc} title="Двери" />
+          <MainButton to={"apartments"} bgc={bgc} title="Отделка" />
+          <MainButton to={"loggias"} bgc={bgc} title="Лоджии" />
+          <MainButton to={"window"} bgc={bgc} title="Окна" />
+          <MainButton to={"doors"} bgc={bgc} title="Двери" />
         </div>
       </div>
     </div>

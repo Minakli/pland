@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  align-items: center;
+  height: 100vh;
+}
+.h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.photo_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_arrow {
+  width: 100px;
+  height: 100px;
+}
+.left_far_photo {
+  display: block;
+  width: 160px;
+  height: 500px;
+  border-left: 20px solid white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+}
+.left_close_photo {
+  display: block;
+  width: 160px;
+  height: 600px;
+  border-left: 20px solid white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+}
+.mid_wrapper {
+  position: relative;
+}
+
+.mid_photo {
+  display: block;
+  width: 900px;
+  height: 700px;
+  border: 20px solid white;
+  object-fit: cover;
+}
+.folder_btn {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.folder_img {
+}
+.folder_name {
+}
+
+.right_close_photo {
+  width: 160px;
+  height: 600px;
+  border-right: 20px solid white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+}
+
+.right_far_photo {
+  width: 160px;
+  height: 500px;
+  border-right: 20px solid white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+}
+
+.right_arrow {
+  width: 100px;
+  height: 100px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
