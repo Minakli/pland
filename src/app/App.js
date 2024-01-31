@@ -1,6 +1,6 @@
 import "./Global.css";
 import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import About from "../pages/About/About";
 import Apartments from "../pages/Apartments/Apartments";
 import Doors from "../pages/Doors/Doors";
@@ -11,6 +11,9 @@ import Window from "../pages/Window/Window";
 import { apartImg } from "../data/data";
 
 function App() {
+  useEffect(() => {
+    shuffleArray(apartImg);
+  }, []);
   const [images, setImages] = useState(apartImg);
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -19,7 +22,6 @@ function App() {
     }
     return array;
   }
-  // console.log(apartImg);
   return (
     <Routes>
       <Route path="/about" element={<About />} />

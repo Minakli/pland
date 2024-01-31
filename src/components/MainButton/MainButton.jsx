@@ -1,5 +1,8 @@
 import s from "./MainButton.module.css";
 import { Link } from "react-router-dom";
+// import { apartImg } from "../../data/data";
+// import qq from
+//               apartImg[Math.floor(Math.random() * (apartImg.length - 1))].img
 
 export default function MainButton({ bgc, title, to }) {
   console.log(bgc);
@@ -8,6 +11,7 @@ export default function MainButton({ bgc, title, to }) {
       to={to}
       style={{
         backgroundImage: `url(${bgc})`,
+        // backgroundImage: `url(${qq})`,
       }}
       className={s.btn}
     >

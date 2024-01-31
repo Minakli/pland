@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import MainButton from "../../components/MainButton/MainButton";
 import bgc from "../../components/MainButton/1677605581_fonovik-com-p-remont-kvartir-pod-klyuch-foto-26.jpg";
+import { apartImg } from "../../data/data";
 
 export default function Main() {
+  console.log(
+    process.env.PUBLIC_URL +
+      apartImg[Math.floor(Math.random() * (apartImg.length - 1))].img
+  );
   let buttonTitle = "qweqweqwe";
   return (
     <div className={s.body}>
@@ -43,7 +48,14 @@ export default function Main() {
           </div>
         </div>
         <div className={s.main}>
-          <MainButton to={"apartments"} bgc={bgc} title="Отделка" />
+          <MainButton
+            to={"apartments"}
+            bgc={
+              process.env.PUBLIC_URL +
+              apartImg[Math.floor(Math.random() * (apartImg.length - 1))].img
+            }
+            title="Отделка"
+          />
           <MainButton to={"loggias"} bgc={bgc} title="Лоджии" />
           <MainButton to={"window"} bgc={bgc} title="Окна" />
           <MainButton to={"doors"} bgc={bgc} title="Двери" />
